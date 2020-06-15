@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Table Urls</title>
+</head>
+
+<body>
+<div class="container">
+<table border="1px" id="tb-result">
+        <tr>
+            <th>№</th>
+            <th>URL</th>
+            <th>Interval</th>
+            <th>HTTP code</th>
+            <th>Total time</th>
+            <th></th>
+        </tr>
+</table>
+</div>
+
+<div class="container">
+    <form action="table_urls" method="POST" name="send">
+        <div>
+            <input type="text" name="url_table" placeholder="Вставьте url">
+        </div>
+        <div>
+            <input type="text" name="interval" placeholder="Интервал проверок">
+        </div>
+        <div>
+            <button id="button-send" class="button-send">SEND</button>
+        </div>
+    </form>
+</div>
+
+<script src="static/js/get_json.js"></script>
+</body>
+
+</html>
